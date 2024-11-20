@@ -21,6 +21,7 @@ consolaPrint(' ');
 consolaPrint(`Ejercicio 1:`);
 consolaPrint('(calcularAreaRectangulo(5, 3))');
 consolaPrint(' ');
+/* Recibo los datos necesarios como parametros y los uso en la formula de area del triangulo*/
 
 // EJERCICIO 2
 function contarPalabras(str) {
@@ -41,6 +42,7 @@ consolaPrint(' ');
 consolaPrint(`Ejercicio 2:`);
 consolaPrint('contarPalabras("Humahuaca es un lugar copado"');
 consolaPrint(' ');
+/* uso split para separar la cadena por sus espacios metiendo cada parte en un indice de array para luego leer su longitud */
 
 // EJERCICIO 3
 function invertirCadena(cadena) {
@@ -65,6 +67,7 @@ consolaPrint(' ');
 consolaPrint(`Ejercicio 3:`);
 consolaPrint('invertirCadena("hola")');
 consolaPrint(' ');
+/* Recorro la cadena para atras y cada caracter lo concateno al resultado para ir construyendo una cadena invertida */
 
 // EJERCICIO 4
 function esPalindromo(palabra) {
@@ -95,6 +98,9 @@ consolaPrint(' ');
 consolaPrint(`Ejercicio 4:`);
 consolaPrint('esPalindromo("neuquen")');
 consolaPrint(' ');
+/* Leo la longitud del string y calculo la cantidad de comparaciones de caracteres tengo que hacer 
+comparo los caracteres hacia adelante y hacia atras entre ambas mitades
+Si encuentra una diferencia, no cambia el resultado a "no es palindromo" */
 
 // EJERCICIO 5
 function edadCanina() {
@@ -117,3 +123,4 @@ consolaPrint(' ');
 consolaPrint(`Ejercicio 5:`);
 consolaPrint('edadCanina(7)');
 consolaPrint(' ');
+/* recibe un imput, lo multiplica, y lo incrusta en una string */

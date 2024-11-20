@@ -13,14 +13,16 @@ function calcularAreaRectangulo(ancho, alto) {
     console.log('|||||||||||||    ejercicio 1    |||||||||||||');
     console.log('|||||||||||||                   |||||||||||||');
     console.log('');
-    let response = `Solucion 1: ${area}`;    
+    let response = `Solucion 1: ${area}`;   
+    consolaPrint(' ');
+    consolaPrint(`Ejercicio 1:`);
+    consolaPrint('(calcularAreaRectangulo(5, 3))');
+    consolaPrint(response)
+    consolaPrint(' '); 
     return response
 }
 console.log(calcularAreaRectangulo(5, 3));
-consolaPrint(' ');
-consolaPrint(`Ejercicio 1:`);
-consolaPrint('(calcularAreaRectangulo(5, 3))');
-consolaPrint(' ');
+
 /* Recibo los datos necesarios como parametros y los uso en la formula de area del triangulo*/
 
 // EJERCICIO 2
@@ -33,15 +35,16 @@ function contarPalabras(str) {
     console.log('|||||||||||||    ejercicio 2    |||||||||||||');
     console.log('|||||||||||||                   |||||||||||||');
     console.log('');
-    let response = `Solucion 2: ${count}`;    
+    let response = `Solucion 2: ${count}`;   
+    consolaPrint(' ');
+    consolaPrint(`Ejercicio 2:`);
+    consolaPrint('contarPalabras(str)');
+    consolaPrint(response);  
+    consolaPrint(' '); 
     return response
 }
 
 console.log(contarPalabras("Humahuaca es un lugar copado"));
-consolaPrint(' ');
-consolaPrint(`Ejercicio 2:`);
-consolaPrint('contarPalabras("Humahuaca es un lugar copado"');
-consolaPrint(' ');
 /* uso split para separar la cadena por sus espacios metiendo cada parte en un indice de array para luego leer su longitud */
 
 // EJERCICIO 3
@@ -58,15 +61,17 @@ function invertirCadena(cadena) {
     console.log('|||||||||||||    ejercicio 3    |||||||||||||');
     console.log('|||||||||||||                   |||||||||||||');
     console.log('');
-    let response = `Solucion 3: ${anedac}`;    
+    let response = `Solucion 3: ${anedac}`;  
+    consolaPrint(' ');
+    consolaPrint(`Ejercicio 3:`);
+    consolaPrint('invertirCadena(cadena)');
+    consolaPrint(response);  
+    consolaPrint(' ');
     return response
 }
 
 console.log(invertirCadena("hola"));
-consolaPrint(' ');
-consolaPrint(`Ejercicio 3:`);
-consolaPrint('invertirCadena("hola")');
-consolaPrint(' ');
+
 /* Recorro la cadena para atras y cada caracter lo concateno al resultado para ir construyendo una cadena invertida */
 
 // EJERCICIO 4
@@ -77,7 +82,10 @@ function esPalindromo(palabra) {
 
     for (let i = 0; i <= cantXLado; i++) {
         let char1 = palabra[i]
+        console.log('char1; ',char1)
         let char2 = palabra[palabra.length-1-i]
+        console.log('char2; ',char2)
+        console.log(char1 == char2)
         if (char1 != char2) {
             esPal = 'No, no es un palindromo'        
         }
@@ -89,15 +97,17 @@ function esPalindromo(palabra) {
     console.log('|||||||||||||    ejercicio 4    |||||||||||||');
     console.log('|||||||||||||                   |||||||||||||');
     console.log('');
-    let response = `Solucion 4: ${esPal}`;    
+    let response = `Solucion 4: ${esPal}`;
+    consolaPrint(' ');
+    consolaPrint(`Ejercicio 4:`);
+    consolaPrint('esPalindromo("neuquen")');
+    consolaPrint(response);  
+    consolaPrint(' ');
     return response
 }
 
 console.log(esPalindromo("neuquen"));
-consolaPrint(' ');
-consolaPrint(`Ejercicio 4:`);
-consolaPrint('esPalindromo("neuquen")');
-consolaPrint(' ');
+
 /* Leo la longitud del string y calculo la cantidad de comparaciones de caracteres tengo que hacer 
 comparo los caracteres hacia adelante y hacia atras entre ambas mitades
 Si encuentra una diferencia, no cambia el resultado a "no es palindromo" */
@@ -114,13 +124,15 @@ function edadCanina() {
     console.log('|||||||||||||    ejercicio 5    |||||||||||||');
     console.log('|||||||||||||                   |||||||||||||');
     console.log('');
-    let response = `Solucion 5: Tu perro tiene ${edadPerro} años humanos`;    
+    let response = `Solucion 5: Tu perro tiene ${edadPerro} años humanos`;  
+    consolaPrint(' ');
+    consolaPrint(`Ejercicio 5:`);
+    consolaPrint('edadCanina()');
+    consolaPrint(response);  
+    consolaPrint(' ');
     return response
 }
 
 console.log(edadCanina(7));
-consolaPrint(' ');
-consolaPrint(`Ejercicio 5:`);
-consolaPrint('edadCanina(7)');
-consolaPrint(' ');
+
 /* recibe un imput, lo multiplica, y lo incrusta en una string */
